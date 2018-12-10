@@ -1,15 +1,13 @@
 server:
   port: 8080
-
-eureka:         
-  client:
-    serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka
-    healthcheck:
-      enabled: true
-    lease:
-      duration: 5
  
 spring:    
   application:
     name: service-frontend
+
+ribbon:
+  eureka:
+    enabled: false
+  client:
+    enabled: true
+ServerListRefreshInterval: 5000
