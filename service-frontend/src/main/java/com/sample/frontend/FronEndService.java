@@ -19,7 +19,7 @@ class FronEndService {
 
     @HystrixCommand(fallbackMethod = "getNamesFromCache")
     List<String> getNamesFromBackend() {
-        return restTemplate.getForObject("http://service-backend/names/list", List.class);
+        return restTemplate.getForObject("http://service-backend.aha-backend.svc.cluster.local:8080/names/list", List.class);
     }
 
     List<String> getNamesFromCache() {
