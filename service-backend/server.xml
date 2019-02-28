@@ -117,6 +117,13 @@
            port="8443" maxThreads="200"
            scheme="https" secure="true" SSLEnabled="true"
            keystoreFile="/usr/local/tomcat/var/conf/keystore.p12" keystorePass="pwd123"
+           clientAuth="true" sslProtocol="TLS"/>
+
+    <Connector
+           protocol="org.apache.coyote.http11.Http11NioProtocol"
+           port="28443" maxThreads="200"
+           scheme="https" secure="true" SSLEnabled="true"
+           keystoreFile="/usr/local/tomcat/var/conf/keystore.p12" keystorePass="pwd123"
            clientAuth="false" sslProtocol="TLS"/>
 
     <!-- Define an AJP 1.3 Connector on port 8009 -->

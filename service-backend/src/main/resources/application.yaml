@@ -5,6 +5,7 @@
 ##    key-store-password: pwd123
 #    keyStoreType: PKCS12
 #    keyAlias: tomcat
+#    client-auth: need
 
 #eureka:         
 #  client:

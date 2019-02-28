@@ -19,7 +19,7 @@ class BackEndController {
 	@RequestMapping("/")
 	public String ribbonPing() {
 		System.out.println("Ribbon ping");
-		return this.hostName + "- [" + env + "]";
+		return "Hostname--> " + this.hostName + "- [" + env + "]";
 }
 
     @RequestMapping(value="/names/list", method=RequestMethod.GET)

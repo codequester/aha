@@ -5,7 +5,7 @@ FROM tomcat
 MAINTAINER Shankar Govindarajan <shgovind@redhat.com>
 LABEL description="This is a sample rest app"
 
-EXPOSE 8080 8443
+EXPOSE 8080 8443 28443
 
 RUN mkdir -p ./var/conf
 RUN chmod -R 777 ./var/conf/
