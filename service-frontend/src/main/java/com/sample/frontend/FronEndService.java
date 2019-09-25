@@ -17,7 +17,7 @@ class FronEndService {
     @Autowired
     private RestTemplate restTemplate;
 
-    @HystrixCommand(fallbackMethod = "getNamesFromCache")
+//    @HystrixCommand(fallbackMethod = "getNamesFromCache")
     List<String> getNamesFromBackend() {
         return restTemplate.getForObject("http://service-backend/names/list", List.class);
     }

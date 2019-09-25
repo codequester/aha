@@ -2,6 +2,14 @@ server:
   port: 8761
 
 eureka:
+  numberRegistrySyncRetries: 1
+  instance:
+    preferIpAddress: true
+#    hostname: service-registry
   client:
     registerWithEureka: false
     fetchRegistry: false
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}
+#  server:
+#    enable-self-preservation: false
