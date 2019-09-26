@@ -9,7 +9,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>hellotomcat Maven Webapp</name>
+  <name>Service Registry Maven Webapp</name>
   <url>http://www.example.com</url>
 
   <properties>
